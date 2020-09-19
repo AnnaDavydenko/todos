@@ -1,0 +1,234 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #dff2ee;
+	overflow: hidden;
+}
+
+.cardListWrapper {
+	width: 60%;
+	min-width: 365px;
+	height: 580px;
+	background: #ffffff;
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.createTodoWrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: solid 3px #d6f6e7;
+}
+
+.createTodoWrapper .createTodoInput {
+	flex: 7;
+	height: 40px;
+	margin: 20px;
+	padding: 5px 10px;
+	border: solid 1px #d6f6e7;
+	border-radius: 11px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+}
+
+.createTodoWrapper .createTodoButton {
+	flex: 3;
+	margin: 20px;
+	padding: 5px 10px;
+	background: #6decb1;
+	border-radius: 11px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.createTodoWrapper .createTodoButton img {
+	height: 24px;
+	width: 24px;
+}
+
+.todoListWrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 440px;
+	margin: 10px;
+	padding: 10px;
+	overflow: auto;
+}
+
+.todoItemWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 25px 0;
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.todoItemWrapper p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 7;
+	margin: 20px;
+	padding: 5px 10px;
+	font-size: 16px;
+	word-break: break-all;
+}
+
+.todoItemWrapper input {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 7;
+	display: none;
+	height: 40px;
+	margin: 20px;
+	padding: 5px 10px;
+	border: solid 1px #d6f6e7;
+	border-radius: 11px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+}
+
+.todoItemWrapper .saveButton,
+.todoItemWrapper.editTask .editButton,
+.todoItemWrapper.editTask p {
+	display: none;
+}
+
+.todoItemWrapper.editTask .saveButton,
+.todoItemWrapper.editTask input {
+	display: block;
+}
+
+.todoButtonWrapper {
+	display: flex;
+	flex: 3;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+}
+
+.todoButtonWrapper .imgButton {
+	height: 40px;
+	width: 150px;
+	padding: 5px 5px 10px 5px;
+	margin: 20px;
+	border-radius: 11px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.todoButtonWrapper .removeButton {
+	background: #ff9292;
+}
+
+.todoButtonWrapper .editButton {
+	background: #ffbf56;
+}
+
+.todoButtonWrapper .saveButton {
+	background: #85e8de;
+}
+
+.todoButtonWrapper .imgButton img {
+	height: 24px;
+	width: 24px;
+}
+
+@media (max-width: 1200px) {
+	.cardListWrapper {
+		width: 80%;
+	}
+	.todoItemWrapper {
+		display: block;
+	}
+}
+
+@media (max-width: 760px) {
+	.cardListWrapper {
+		width: 90%;
+	}
+	.todoItemWrapper {
+		display: block;
+	}
+}
